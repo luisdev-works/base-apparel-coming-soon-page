@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/dist/css/main.min.css" />
+
+    <title>Frontend Mentor | Base Apparel coming soon page</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="header-logo">
+          <a href="#" id="header-logo">
+            <img src="/images/logo.svg" alt="logo" />
+          </a>
+        </div>
+      </header>
+
+      <section class="hero-image">
+        <picture>
+          <source
+            srcset="/images/hero-desktop.jpg"
+            media="(min-width: 640px)"
+          />
+          <img
+            src="/images/hero-mobile.jpg"
+            alt="image-mobile"
+            class="hero-mobile"
+          />
+        </picture>
+      </section>
+
+      <main class="main">
+        <section class="main-form">
+          <div class="main-text">
+            <h1 class="main-title">
+              <span>We're</span>
+              <br />
+              coming
+              <br />
+              soon
+            </h1>
+            <p class="main-description">
+              Hello fellow shoppers! We're currently building our new fashion
+              store. Add your email below to stay up-to-date with announcements
+              and our launch deals.
+            </p>
+          </div>
+
+          <form novalidate class="sign-form">
+            <label for="email"></label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Email Address"
+            />
+            <span class="error-icon">
+              <img
+                src="/images/icon-error.svg"
+                alt="Form validation error icon"
+              />
+            </span>
+            <button class="submit-button" aria-label="submit form">
+              <img
+                src="/images/icon-arrow.svg"
+                alt="Form submit button arrow icon"
+              />
+            </button>
+            <p class="validation-message"></p>
+          </form>
+        </section>
+      </main>
+
+      <footer>
+        <p class="attribution">
+          Challenge by
+          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+            >Frontend Mentor</a
+          >. Coded by <a href="#">Luis</a>.
+        </p>
+      </footer>
+    </div>
+
+    <script src="/dist/js/app.js"></script>
+  </body>
+</html>
