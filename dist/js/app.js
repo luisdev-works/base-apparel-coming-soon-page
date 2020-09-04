@@ -14,7 +14,7 @@ form.addEventListener('submit', (e) => {
   } else {
     validationMessage.textContent = 'Thank you!';
     validationMessage.style.color = 'hsl(0, 6%, 24%)';
-    errorIcon.classList.remove('error');
+    errorIcon.classList.remove('visible');
     email.value = '';
   }
 });
